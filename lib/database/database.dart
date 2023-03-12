@@ -1,6 +1,15 @@
-import 'package:sqflite/sqflite.dart';
+import 'package:sqflite/sqflite.dart' as sqflite;
 import 'package:path/path.dart';
+import 'package:floor/floor.dart';
+import 'dart:async';
+import 'package:verpro/src/models/produto_entity.dart';
 
+part 'database.g.dart';
+
+@Database(version: 1, entities: [ProdutoEntity])
+abstract class AppDatabase extends FloorDatabase {}
+
+/*
 class DB {
   DB._();
 
@@ -26,6 +35,16 @@ class DB {
   _onCreate(db, version) async {
     //await db.execute(_conta);
     // await db.execute(_outro);
-    await db.insert('produto', {});
+    await db.insert(_produto);
   }
+
+  String get _produto => '''
+  CREATE TABLE produto(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT,
+    decricao TEXT,
+    foto TEXT,
+  );
+''';
 }
+*/

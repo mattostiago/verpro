@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:verpro/app/my_app.dart';
 import 'package:verpro/screens/home.dart';
 import 'package:verpro/utils/constants.dart';
 
 void main() async {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
+/*
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -30,3 +32,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+*/

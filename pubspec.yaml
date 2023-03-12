@@ -38,10 +38,16 @@ dependencies:
   sqflite: ^2.2.5
   flutter_localization: ^0.1.10
   path_provider: ^2.0.13
+  path: ^1.8.0
+  floor: ^1.4.1
+  drift: ^2.5.0
 
 dev_dependencies:
+  floor_generator:
+  build_runner: 
   flutter_test:
     sdk: flutter
+  
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
