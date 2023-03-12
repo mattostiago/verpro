@@ -10,9 +10,9 @@ import '../my_app.dart';
 
 class ContactList extends StatelessWidget {
   Future<List<Map<String, dynamic>>> _buscar() async {
-    //Directory path = await getApplicationDocumentsDirectory();
+    Directory path = await getApplicationDocumentsDirectory();
 
-    String path = join(await getDatabasesPath(), 'banco');
+    //String path = join(await getDatabasesPath(), 'banco');
     Database db =
         await openDatabase(path.toString(), version: 1, onCreate: (db, v) {
       db.execute(createTable);
