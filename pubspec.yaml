@@ -41,6 +41,7 @@ dependencies:
   path: ^1.8.0
   floor: ^1.4.1
   drift: ^2.5.0
+  http: 
 
 dev_dependencies:
   floor_generator:
